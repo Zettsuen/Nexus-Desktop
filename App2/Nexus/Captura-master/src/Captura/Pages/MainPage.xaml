@@ -4,6 +4,6 @@
       x:Class="Captura.MainPage">
     <DockPanel>
         <Frame Source="HomePage.xaml"
-               Margin="5" NavigationUIVisibility="Visible"/>
+               Margin="5"/>
     </DockPanel>
 </Page>

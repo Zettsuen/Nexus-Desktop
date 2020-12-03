@@ -51,8 +51,8 @@
                                  Value="True">
                             <Setter TargetName="Panel"
                                     Property="Background"
-                                    Value="{DynamicResource Accent}" />
-                            <Setter Property="Foreground" Value="White"/>
+                                    Value="#390d57" />
+                            <Setter Property="Foreground" Value="#390d57"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
