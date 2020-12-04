@@ -25,7 +25,6 @@ namespace lecturadeveu
         {
             try
             {
-
                 escolta.SetInputToDefaultAudioDevice();
                 escolta.LoadGrammar(new DictationGrammar());
                 escolta.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Lector);
