@@ -16,7 +16,7 @@ namespace Captura.Base
         }
         private static void Run()
         {
-            string args = "C:\\Users\\Panta\\OneDrive\\Documentos\\Captura\\2020-12-03";
+            string args = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"Captura");
 
             // If a directory is not specified, exit program.
             /*if (args.Length != 2)
@@ -58,30 +58,48 @@ namespace Captura.Base
             String path = Path.GetFileName(e.FullPath);
             String directory = Path.GetDirectoryName(e.FullPath);
             int position = e.FullPath.IndexOf(path);
-            String new_directory = e.FullPath.Substring(position);
+            Console.WriteLine(directory.Length);
+            String new_directory = e.FullPath.Substring(0,directory.Length - 7);
+            new_directory += "NexusClips\\";
             Console.WriteLine(new_directory);
-            //Console.WriteLine(path);
-            //Console.WriteLine(directory);
-           /* Process cmd = new Process();
+            try
+            {
+                // Determine whether the directory exists.
+                if (Directory.Exists(new_directory))
+                {
+                    Console.WriteLine("That path exists already.");
+
+                }
+                else {
+
+                    // Try to create the directory.
+                    DirectoryInfo di = Directory.CreateDirectory(new_directory);
+                    Console.WriteLine("The directory was created successfully at {0}.", Directory.GetCreationTime(new_directory));
+
+                }
+
+                
+            }
+            catch (Exception a)
+            {
+                Console.WriteLine("The process failed: {0}", a.ToString());
+            }
+            finally { }
+            Process cmd = new Process();
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.RedirectStandardInput = true;
             cmd.StartInfo.RedirectStandardOutput = true;
             cmd.StartInfo.CreateNoWindow = true;
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
-
-            cmd.StandardInput.WriteLine($"ffmpeg.exe -sseof -30 -i {e.FullPath} -vcodec libx264 -crf 28 {directory}\\jugada-nexus-{path}");
+            cmd.StandardInput.WriteLine($"ffmpeg.exe -sseof -30 -i {e.FullPath} -vcodec libx264 -crf 28 {new_directory}jugada-nexus-{path}");
             cmd.StandardInput.Flush();
             cmd.StandardInput.Close();
             cmd.WaitForExit();
-            Console.WriteLine(cmd.StandardOutput.ReadToEnd());*/
-            //Console.Write($"ffmpeg.exe -sseof -30 -i {e.FullPath} -vcodec libx264 -crf 28 {directory}\\jugada-nexus-{path}");
+            Console.WriteLine(cmd.StandardOutput.ReadToEnd());
             
             }
-            // Specify what is done when a file is changed, created, or deleted.
-            //Console.WriteLine($"File: {e.FullPath} {e.ChangeType}");
-            
-            //Process.Start($"ffmpeg.exe -sseof -30 -i {e.FullPath} -vcodec libx264 -crf 28 jugada-nexus-{e.FullPath}");
+
             
 
     }

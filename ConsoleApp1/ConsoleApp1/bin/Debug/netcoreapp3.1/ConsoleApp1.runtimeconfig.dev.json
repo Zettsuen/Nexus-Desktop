@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Panta\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Panta\\.nuget\\packages"
+      "C:\\Users\\Pantaleon\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Pantaleon\\.nuget\\packages"
     ]
   }
 }
