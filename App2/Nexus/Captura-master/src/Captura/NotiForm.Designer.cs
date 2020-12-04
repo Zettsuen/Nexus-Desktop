@@ -60,7 +60,7 @@ namespace lecturadeveu
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::lecturadeveu.Properties.Resources.logo;
+            this.pictureBox1.Image = global::Captura.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(102, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);

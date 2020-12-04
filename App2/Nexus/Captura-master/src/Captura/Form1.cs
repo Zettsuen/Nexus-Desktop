@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Speech.Recognition;
+using Captura.ViewModels;
 
 namespace lecturadeveu
 {
@@ -22,22 +23,28 @@ namespace lecturadeveu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             try
             {
+
                 escolta.SetInputToDefaultAudioDevice();
                 escolta.LoadGrammar(new DictationGrammar());
                 escolta.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Lector);
                 escolta.RecognizeAsync(RecognizeMode.Multiple);
+
+                Captura.App app = new Captura.App();
+                app.InitializeComponent();
+                app.Run();
+
             }
             catch (InvalidOperationException)
             {
                 MessageBox.Show("NO");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
         Boolean segons = true; //Utilitzo aquesta variable per contar els 30 segons
 
@@ -62,6 +69,9 @@ namespace lecturadeveu
                         segons = false;
                         NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...",Color.FromArgb(63, 34, 82));
                         notificacio.Show();
+                        //RecordingModel.StopRecording();
+
+
                     }
                     else
                     {

@@ -426,7 +426,7 @@ namespace Captura.ViewModels
             });
         }
 
-        void AfterRecording()
+        public  void AfterRecording()
         {
             _pauseNotification?.Remove();
 
@@ -437,6 +437,7 @@ namespace Captura.ViewModels
 
             _timerModel.Stop();
         }
+
 
         IVideoFileWriter GetVideoFileWriterWithPreview(IImageProvider ImgProvider, IAudioProvider AudioProvider, RecordingModelParams RecordingParams)
         {
