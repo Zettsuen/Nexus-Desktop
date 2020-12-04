@@ -97,10 +97,12 @@ namespace Captura.Base
             cmd.StandardInput.Close();
             cmd.WaitForExit();
             Console.WriteLine(cmd.StandardOutput.ReadToEnd());
-            
-            }
+            File.Delete(e.FullPath);
 
-            
+
+        }
+
+
 
     }
 }
