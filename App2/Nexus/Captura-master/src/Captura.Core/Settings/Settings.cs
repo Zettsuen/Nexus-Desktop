@@ -169,7 +169,7 @@ namespace Captura
 
         public string FilenameFormat
         {
-            get => Get("%yyyy%-%MM%-%dd%/%HH%-%mm%-%ss%");
+            get => Get("%HH%-%mm%-%ss%");
             set => Set(value);
         }
 
