@@ -41,3 +41,25 @@ C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\De
 C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.pdb
 C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.exe
 C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.pdb
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.exe.config
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.exe
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.pdb
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\NAudio.dll
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Octokit.dll
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\SharpAvi.dll
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\NAudio.xml
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\QuickLibrary.pdb
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\SharpAvi.xml
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csprojAssemblyReference.cache
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.AboutForm.resources
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.AreaForm.resources
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.MainForm.resources
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.NotiForm.resources
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.Properties.Resources.resources
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.SettingsForm.resources
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.StopForm.resources
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.GenerateResource.cache
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.CoreCompileInputs.cache
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.CopyComplete
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.exe
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.pdb
