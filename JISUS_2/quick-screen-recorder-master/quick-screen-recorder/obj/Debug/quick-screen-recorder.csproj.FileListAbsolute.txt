@@ -1,0 +1,43 @@
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\quick-screen-recorder.exe.config
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\quick-screen-recorder.exe
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\quick-screen-recorder.pdb
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\SharpAvi.dll
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\SharpAvi.xml
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick-screen-recorder.csprojAssemblyReference.cache
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick_screen_recorder.Properties.Resources.resources
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.GenerateResource.cache
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.CopyComplete
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick-screen-recorder.exe
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick-screen-recorder.pdb
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick_screen_recorder.MainForm.resources
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick_screen_recorder.AreaForm.resources
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\NAudio.dll
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\NAudio.xml
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick_screen_recorder.StopForm.resources
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick_screen_recorder.AboutForm.resources
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\Octokit.dll
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\obj\Debug\quick_screen_recorder.SettingsForm.resources
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\QuickLibrary.dll
+D:\Projects\DotNet\quick-screen-recorder\quick-screen-recorder\bin\Debug\QuickLibrary.pdb
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\NAudio.dll
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Octokit.dll
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\SharpAvi.dll
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\NAudio.xml
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\QuickLibrary.pdb
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\SharpAvi.xml
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csprojAssemblyReference.cache
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.AboutForm.resources
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.AreaForm.resources
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.MainForm.resources
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.Properties.Resources.resources
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.SettingsForm.resources
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.StopForm.resources
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.GenerateResource.cache
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.CoreCompileInputs.cache
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick-screen-recorder.csproj.CopyComplete
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\quick_screen_recorder.NotiForm.resources
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.exe.config
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.exe
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.pdb
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.exe
+C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.pdb
