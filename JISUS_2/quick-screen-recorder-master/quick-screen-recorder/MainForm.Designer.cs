@@ -39,6 +39,7 @@
             this.qualityLabel = new System.Windows.Forms.Label();
             this.areaLabel = new System.Windows.Forms.Label();
             this.videoGroup = new QuickLibrary.QlibGroupBox();
+            this.refreshScreensBtn = new System.Windows.Forms.Button();
             this.hideTaskbarCheckBox = new QuickLibrary.QlibCheckBox();
             this.sizelabel = new System.Windows.Forms.Label();
             this.yNumeric = new QuickLibrary.QlibNumericBox();
@@ -51,21 +52,21 @@
             this.captureCursorCheckBox = new QuickLibrary.QlibCheckBox();
             this.inputDeviceLabel = new System.Windows.Forms.Label();
             this.audioGroup = new QuickLibrary.QlibGroupBox();
+            this.refreshAudioBtn = new System.Windows.Forms.Button();
             this.inputDeviceComboBox = new QuickLibrary.QlibComboBox();
             this.separateAudioCheckBox = new QuickLibrary.QlibCheckBox();
             this.generalGroup = new QuickLibrary.QlibGroupBox();
             this.aviLabel = new System.Windows.Forms.Label();
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1 = new QuickLibrary.QlibToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.previewBox = new System.Windows.Forms.PictureBox();
             this.previewBtn = new System.Windows.Forms.ToolStripButton();
             this.onTopBtn = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsBtn = new System.Windows.Forms.ToolStripButton();
             this.aboutBtn = new System.Windows.Forms.ToolStripButton();
-            this.refreshAudioBtn = new System.Windows.Forms.Button();
-            this.refreshScreensBtn = new System.Windows.Forms.Button();
+            this.previewBox = new System.Windows.Forms.PictureBox();
             this.recButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.videoGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xNumeric)).BeginInit();
@@ -75,6 +76,7 @@
             this.generalGroup.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.previewBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // folderTextBox
@@ -172,6 +174,20 @@
             this.videoGroup.TabIndex = 6;
             this.videoGroup.TabStop = false;
             this.videoGroup.Text = "Video options";
+            // 
+            // refreshScreensBtn
+            // 
+            this.refreshScreensBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.refreshScreensBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.refreshScreensBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refreshScreensBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshScreensBtn.Image")));
+            this.refreshScreensBtn.Location = new System.Drawing.Point(311, 52);
+            this.refreshScreensBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.refreshScreensBtn.Name = "refreshScreensBtn";
+            this.refreshScreensBtn.Size = new System.Drawing.Size(23, 23);
+            this.refreshScreensBtn.TabIndex = 9;
+            this.refreshScreensBtn.UseVisualStyleBackColor = false;
+            this.refreshScreensBtn.Click += new System.EventHandler(this.refreshScreensBtn_Click);
             // 
             // hideTaskbarCheckBox
             // 
@@ -345,6 +361,20 @@
             this.audioGroup.TabStop = false;
             this.audioGroup.Text = "Audio options";
             // 
+            // refreshAudioBtn
+            // 
+            this.refreshAudioBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.refreshAudioBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.refreshAudioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refreshAudioBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshAudioBtn.Image")));
+            this.refreshAudioBtn.Location = new System.Drawing.Point(311, 22);
+            this.refreshAudioBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.refreshAudioBtn.Name = "refreshAudioBtn";
+            this.refreshAudioBtn.Size = new System.Drawing.Size(23, 23);
+            this.refreshAudioBtn.TabIndex = 18;
+            this.refreshAudioBtn.UseVisualStyleBackColor = false;
+            this.refreshAudioBtn.Click += new System.EventHandler(this.refreshBtn_Click);
+            // 
             // inputDeviceComboBox
             // 
             this.inputDeviceComboBox.BackColor = System.Drawing.SystemColors.Window;
@@ -418,28 +448,6 @@
             this.toolStrip1.TabStop = true;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.AutoSize = false;
-            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(2, 16);
-            // 
-            // previewBox
-            // 
-            this.previewBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.previewBox.BackColor = System.Drawing.Color.Black;
-            this.previewBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.previewBox.Location = new System.Drawing.Point(358, 9);
-            this.previewBox.Margin = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.previewBox.Name = "previewBox";
-            this.previewBox.Size = new System.Drawing.Size(437, 376);
-            this.previewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.previewBox.TabIndex = 26;
-            this.previewBox.TabStop = false;
-            // 
             // previewBtn
             // 
             this.previewBtn.AutoSize = false;
@@ -468,6 +476,13 @@
             this.onTopBtn.ToolTipText = "Always on top | Ctrl+T";
             this.onTopBtn.CheckedChanged += new System.EventHandler(this.onTopCheckBox_CheckedChanged);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.AutoSize = false;
+            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(2, 16);
+            // 
             // settingsBtn
             // 
             this.settingsBtn.AutoSize = false;
@@ -493,33 +508,20 @@
             this.aboutBtn.Text = "About | F1";
             this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
             // 
-            // refreshAudioBtn
+            // previewBox
             // 
-            this.refreshAudioBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.refreshAudioBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.refreshAudioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.refreshAudioBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshAudioBtn.Image")));
-            this.refreshAudioBtn.Location = new System.Drawing.Point(311, 22);
-            this.refreshAudioBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.refreshAudioBtn.Name = "refreshAudioBtn";
-            this.refreshAudioBtn.Size = new System.Drawing.Size(23, 23);
-            this.refreshAudioBtn.TabIndex = 18;
-            this.refreshAudioBtn.UseVisualStyleBackColor = false;
-            this.refreshAudioBtn.Click += new System.EventHandler(this.refreshBtn_Click);
-            // 
-            // refreshScreensBtn
-            // 
-            this.refreshScreensBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.refreshScreensBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.refreshScreensBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.refreshScreensBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshScreensBtn.Image")));
-            this.refreshScreensBtn.Location = new System.Drawing.Point(311, 52);
-            this.refreshScreensBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.refreshScreensBtn.Name = "refreshScreensBtn";
-            this.refreshScreensBtn.Size = new System.Drawing.Size(23, 23);
-            this.refreshScreensBtn.TabIndex = 9;
-            this.refreshScreensBtn.UseVisualStyleBackColor = false;
-            this.refreshScreensBtn.Click += new System.EventHandler(this.refreshScreensBtn_Click);
+            this.previewBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.previewBox.BackColor = System.Drawing.Color.Black;
+            this.previewBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.previewBox.Location = new System.Drawing.Point(358, 9);
+            this.previewBox.Margin = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.previewBox.Name = "previewBox";
+            this.previewBox.Size = new System.Drawing.Size(437, 376);
+            this.previewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.previewBox.TabIndex = 26;
+            this.previewBox.TabStop = false;
             // 
             // recButton
             // 
@@ -527,7 +529,7 @@
             this.recButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.recButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.recButton.Image = ((System.Drawing.Image)(resources.GetObject("recButton.Image")));
-            this.recButton.Location = new System.Drawing.Point(9, 9);
+            this.recButton.Location = new System.Drawing.Point(102, 9);
             this.recButton.Margin = new System.Windows.Forms.Padding(0);
             this.recButton.Name = "recButton";
             this.recButton.Size = new System.Drawing.Size(120, 40);
@@ -538,11 +540,22 @@
             this.recButton.UseVisualStyleBackColor = false;
             this.recButton.Click += new System.EventHandler(this.recButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(804, 394);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.previewBox);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.generalGroup);
@@ -574,6 +587,7 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.previewBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -617,6 +631,7 @@
 		private System.Windows.Forms.PictureBox previewBox;
 		private System.Windows.Forms.ToolStripButton previewBtn;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-	}
+        private System.Windows.Forms.PictureBox pictureBox1;
+    }
 }
 

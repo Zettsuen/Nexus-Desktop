@@ -50,7 +50,7 @@ namespace quick_screen_recorder
 			DateTime tickTime = DateTime.Now;
 			TimeSpan result = tickTime - startTime;
 			timeLabel.Text = string.Format("{0:D2}:{1:D2}.{2:D3}", result.Minutes, result.Seconds, result.Milliseconds);
-			this.Text = string.Format("{0:D2}:{1:D2} - Quick Screen Recorder", result.Minutes, result.Seconds);
+			this.Text = string.Format("{0:D2}:{1:D2} - Nexus Clips", result.Minutes, result.Seconds);
 		}
 
 		private void recButton_Click(object sender, EventArgs e)
