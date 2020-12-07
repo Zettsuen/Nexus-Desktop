@@ -11,9 +11,12 @@ using System.Runtime.InteropServices;
 using QuickLibrary;
 using System.Text;
 using System.Diagnostics;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 using System.Security.Permissions;
+using System.Diagnostics;
 
 namespace quick_screen_recorder
 {
