@@ -363,13 +363,13 @@ public partial class MainForm : Form
 				if (window == DialogResult.Yes)
 				{
 					StartRec(path);
-					Run(path);
+					//Run(path);
 				}
 			}
 			else
 			{
 				StartRec(path);
-				Run(path);
+				//Run(path);
 			}
 		}
 
@@ -556,6 +556,15 @@ public partial class MainForm : Form
 
 		private void MainForm_Load(object sender, EventArgs e)
 		{
+			String crear = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/");
+			if (Directory.Exists(crear))
+			{
+			} else
+            {
+				
+				DirectoryInfo di = Directory.CreateDirectory(crear);
+			}
+			
 			HotkeyManager.RegisterHotKey(this.Handle, 0, (int)HotkeyManager.KeyModifier.Alt, Keys.R.GetHashCode());
 
 			onTopBtn.Checked = Properties.Settings.Default.AlwaysOnTop;
