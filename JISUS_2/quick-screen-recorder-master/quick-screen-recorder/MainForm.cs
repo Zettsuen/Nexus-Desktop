@@ -210,8 +210,8 @@ namespace quick_screen_recorder
 			if (File.Exists(path))
 			{
 				DialogResult window = MessageBox.Show(
-					fileNameTextBox.Text + ".avi already exists.\nDo you want to replace it and start recording?",
-					"Warning",
+					fileNameTextBox.Text + ".avi ya existe.\n¿Quieres reemplazar y empezar a grabar?",
+					"Atención",
 					MessageBoxButtons.YesNo,
 					MessageBoxIcon.Question
 				);
