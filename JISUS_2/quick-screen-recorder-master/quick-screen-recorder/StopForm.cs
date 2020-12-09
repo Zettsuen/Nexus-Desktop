@@ -60,30 +60,13 @@ namespace quick_screen_recorder
 		{
 			this.Close();
 		}
-		private static void Run(string args)
+		private static void Run()
 		{
 
-			DirectoryInfo f1 = new DirectoryInfo(args);
-			var myFile = f1.GetFiles()
-			 .OrderByDescending(f => f.LastWriteTime)
-			 .First();
-			var b = myFile.FullName;
-			var a = myFile.Name;
-			var c = b.Substring(0, b.Length - a.Length);
-			Console.WriteLine(c);
-			Process cmd = new Process();
-			cmd.StartInfo.FileName = "cmd.exe";
-			cmd.StartInfo.RedirectStandardInput = true;
-			cmd.StartInfo.RedirectStandardOutput = true;
-			cmd.StartInfo.CreateNoWindow = true;
-			cmd.StartInfo.UseShellExecute = false;
-			cmd.Start();
-			cmd.StandardInput.WriteLine($"ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}");
-			cmd.StandardInput.Flush();
-			cmd.StandardInput.Close();
-			cmd.WaitForExit();
-			Console.WriteLine(cmd.StandardOutput.ReadToEnd());
-			myFile.Delete();
+			Process process = Process.Start(@"Data\ConsoleApp1.exe");
+			int id = process.Id;
+			Process tempProc = Process.GetProcessById(id);
+			tempProc.WaitForExit();
 
 
 		}
@@ -92,7 +75,7 @@ namespace quick_screen_recorder
 			mainTimer.Stop();
 			(Owner as MainForm).StopRec();
 			(Owner as MainForm).Show();
-			Run(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/"));
+			Run();
 			HotkeyManager.UnregisterHotKey(this.Handle, 0);
 			HotkeyManager.UnregisterHotKey(this.Handle, 1);
 		}
