@@ -60,13 +60,22 @@ namespace quick_screen_recorder
 		{
 			this.Close();
 		}
-		private static void Run()
+		private static void Run(string args)
 		{
-
-			Process process = Process.Start(@"Data\ConsoleApp1.exe");
-			int id = process.Id;
-			Process tempProc = Process.GetProcessById(id);
-			tempProc.WaitForExit();
+			DirectoryInfo f1 = new DirectoryInfo(args);
+			var myFile = f1.GetFiles()
+			 .OrderByDescending(f => f.LastWriteTime)
+			 .First();
+			var b = myFile.FullName;
+			var a = myFile.Name;
+			var c = b.Substring(0, b.Length - a.Length);
+			System.Diagnostics.Process process = new System.Diagnostics.Process();
+			System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+			startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+			startInfo.FileName = "cmd.exe";
+			startInfo.Arguments = $"ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}";
+			process.StartInfo = startInfo;
+			process.Start();
 
 
 		}
@@ -75,7 +84,7 @@ namespace quick_screen_recorder
 			mainTimer.Stop();
 			(Owner as MainForm).StopRec();
 			(Owner as MainForm).Show();
-			Run();
+			Run(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/"));
 			HotkeyManager.UnregisterHotKey(this.Handle, 0);
 			HotkeyManager.UnregisterHotKey(this.Handle, 1);
 		}
