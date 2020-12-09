@@ -67,7 +67,10 @@ namespace quick_screen_recorder
 			var myFile = f1.GetFiles()
 			 .OrderByDescending(f => f.LastWriteTime)
 			 .First();
+			var b = myFile.FullName;
 			var a = myFile.Name;
+			var c = b.Substring(0, b.Length - a.Length);
+			Console.WriteLine(c);
 			Process cmd = new Process();
 			cmd.StartInfo.FileName = "cmd.exe";
 			cmd.StartInfo.RedirectStandardInput = true;
@@ -75,7 +78,7 @@ namespace quick_screen_recorder
 			cmd.StartInfo.CreateNoWindow = true;
 			cmd.StartInfo.UseShellExecute = false;
 			cmd.Start();
-			cmd.StandardInput.WriteLine($"ffmpeg.exe -sseof -30 -i {a} -vcodec libx264 -crf 28 jugada-nexus-{a}");
+			cmd.StandardInput.WriteLine($"ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}");
 			cmd.StandardInput.Flush();
 			cmd.StandardInput.Close();
 			cmd.WaitForExit();

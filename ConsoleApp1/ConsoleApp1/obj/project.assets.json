@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Pantaleon\\.nuget\\packages\\": {}
+    "C:\\Users\\Panta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pantaleon\\Documents\\GitHub\\Nexus-Desktop\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Panta\\OneDrive\\Documentos\\GitHub\\Nexus-Desktop\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\Pantaleon\\Documents\\GitHub\\Nexus-Desktop\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\Pantaleon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pantaleon\\Documents\\GitHub\\Nexus-Desktop\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\Panta\\OneDrive\\Documentos\\GitHub\\Nexus-Desktop\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\Panta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Panta\\OneDrive\\Documentos\\GitHub\\Nexus-Desktop\\ConsoleApp1\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pantaleon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Panta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
