@@ -215,7 +215,7 @@ public partial class MainForm : Form
 				var a = myFile.Name;
 				var c = b.Substring(0, b.Length - a.Length);
 				string strCmdText;
-				strCmdText = $"ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}";
+				strCmdText = $"/C ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}";
 				System.Diagnostics.Process.Start("CMD.exe", strCmdText);
 			}
 			catch

@@ -80,7 +80,7 @@ namespace quick_screen_recorder
 			mainTimer.Stop();
 			(Owner as MainForm).StopRec();
 			(Owner as MainForm).Show();
-			Run(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/"));
+			//Run(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/"));
 			HotkeyManager.UnregisterHotKey(this.Handle, 0);
 			HotkeyManager.UnregisterHotKey(this.Handle, 1);
 		}
