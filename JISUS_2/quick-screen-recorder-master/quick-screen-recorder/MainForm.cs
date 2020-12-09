@@ -71,11 +71,11 @@ public partial class MainForm : Form
 				settingsBtn.Image = Properties.Resources.white_settings;
 				previewBtn.Image = Properties.Resources.white_preview;
 
-				fileNameTextBox.BackColor = ThemeManager.DarkSecondColor;
-				fileNameTextBox.ForeColor = Color.White;
+				//fileNameTextBox.BackColor = ThemeManager.DarkSecondColor;
+				//fileNameTextBox.ForeColor = Color.White;
 
-				folderTextBox.BackColor = ThemeManager.DarkSecondColor;
-				folderTextBox.ForeColor = Color.White;
+				//folderTextBox.BackColor = ThemeManager.DarkSecondColor;
+				//folderTextBox.ForeColor = Color.White;
 
 				refreshAudioBtn.BackColor = ThemeManager.DarkSecondColor;
 				refreshAudioBtn.Image = Properties.Resources.white_refresh;
@@ -84,11 +84,11 @@ public partial class MainForm : Form
 				refreshScreensBtn.Image = Properties.Resources.white_refresh;
 			}
 
-			generalGroup.SetDarkMode(darkMode);
+			//generalGroup.SetDarkMode(darkMode);
 			videoGroup.SetDarkMode(darkMode);
 			audioGroup.SetDarkMode(darkMode);
 			toolStrip1.SetDarkMode(darkMode, false);
-			browseFolderBtn.SetDarkMode(darkMode);
+			//browseFolderBtn.SetDarkMode(darkMode);
 			qualityComboBox.SetDarkMode(darkMode);
 			inputDeviceComboBox.SetDarkMode(darkMode);
 			areaComboBox.SetDarkMode(darkMode);
@@ -196,7 +196,7 @@ public partial class MainForm : Form
 		{
 			try
 			{
-				HotkeyManager.RegisterHotKey(this.Handle, 0, (int)HotkeyManager.KeyModifier.Alt, Keys.R.GetHashCode());
+				HotkeyManager.RegisterHotKey(this.Handle, 0, (int)HotkeyManager.KeyModifier.Alt, Keys.C.GetHashCode());
 
 				if (areaComboBox.SelectedIndex == areaComboBox.Items.Count - 1)
 				{
@@ -365,7 +365,7 @@ public partial class MainForm : Form
 		{
 			if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
 			{
-				folderTextBox.Text = folderBrowserDialog1.SelectedPath;
+				//folderTextBox.Text = folderBrowserDialog1.SelectedPath;
 			}
 		}
 
@@ -503,11 +503,11 @@ public partial class MainForm : Form
 
 			if (Properties.Settings.Default.Folder == string.Empty)
 			{
-				folderTextBox.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+				//folderTextBox.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 			}
 			else
 			{
-				folderTextBox.Text = Properties.Settings.Default.Folder;
+				//folderTextBox.Text = Properties.Settings.Default.Folder;
 			}
 
 			Task task = new Task(() =>
@@ -765,17 +765,17 @@ public partial class MainForm : Form
 
 			if (attr.HasFlag(FileAttributes.Directory))
 			{
-				folderTextBox.Text = FileList[0];
+				//folderTextBox.Text = FileList[0];
 			}
 			else
 			{
-				folderTextBox.Text = Path.GetDirectoryName(FileList[0]);
+				//folderTextBox.Text = Path.GetDirectoryName(FileList[0]);
 			}
 		}
 
 		private void folderTextBox_TextChanged(object sender, EventArgs e)
 		{
-			Properties.Settings.Default.Folder = folderTextBox.Text;
+			//Properties.Settings.Default.Folder = folderTextBox.Text;
 			Properties.Settings.Default.Save();
 		}
 

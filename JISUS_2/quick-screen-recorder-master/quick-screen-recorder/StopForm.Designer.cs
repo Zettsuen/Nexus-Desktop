@@ -135,7 +135,7 @@
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(120, 40);
             this.stopButton.TabIndex = 24;
-            this.stopButton.Text = " STOP (Alt+R)";
+            this.stopButton.Text = " STOP (Alt+C)";
             this.stopButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.stopButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.stopButton.UseVisualStyleBackColor = false;

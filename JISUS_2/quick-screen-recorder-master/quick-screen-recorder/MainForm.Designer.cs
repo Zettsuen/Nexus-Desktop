@@ -30,11 +30,6 @@
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.folderTextBox = new System.Windows.Forms.TextBox();
-            this.browseFolderBtn = new QuickLibrary.QlibTextButton();
-            this.folderLabel = new System.Windows.Forms.Label();
-            this.fileNameTextBox = new System.Windows.Forms.TextBox();
-            this.fileLabel = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.qualityLabel = new System.Windows.Forms.Label();
             this.areaLabel = new System.Windows.Forms.Label();
@@ -55,8 +50,6 @@
             this.refreshAudioBtn = new System.Windows.Forms.Button();
             this.inputDeviceComboBox = new QuickLibrary.QlibComboBox();
             this.separateAudioCheckBox = new QuickLibrary.QlibCheckBox();
-            this.generalGroup = new QuickLibrary.QlibGroupBox();
-            this.aviLabel = new System.Windows.Forms.Label();
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1 = new QuickLibrary.QlibToolStrip();
             this.previewBtn = new System.Windows.Forms.ToolStripButton();
@@ -64,74 +57,19 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsBtn = new System.Windows.Forms.ToolStripButton();
             this.aboutBtn = new System.Windows.Forms.ToolStripButton();
-            this.previewBox = new System.Windows.Forms.PictureBox();
             this.recButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.previewBox = new System.Windows.Forms.PictureBox();
             this.videoGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightNumeric)).BeginInit();
             this.audioGroup.SuspendLayout();
-            this.generalGroup.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // folderTextBox
-            // 
-            this.folderTextBox.AllowDrop = true;
-            this.folderTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.folderTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.folderTextBox.Location = new System.Drawing.Point(73, 22);
-            this.folderTextBox.Name = "folderTextBox";
-            this.folderTextBox.Size = new System.Drawing.Size(185, 23);
-            this.folderTextBox.TabIndex = 3;
-            this.folderTextBox.TextChanged += new System.EventHandler(this.folderTextBox_TextChanged);
-            this.folderTextBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.folderTextBox_DragDrop);
-            this.folderTextBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.folderTextBox_DragEnter);
-            // 
-            // browseFolderBtn
-            // 
-            this.browseFolderBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.browseFolderBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.browseFolderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.browseFolderBtn.Location = new System.Drawing.Point(265, 22);
-            this.browseFolderBtn.Name = "browseFolderBtn";
-            this.browseFolderBtn.Size = new System.Drawing.Size(69, 23);
-            this.browseFolderBtn.TabIndex = 4;
-            this.browseFolderBtn.Text = "Browse";
-            this.browseFolderBtn.UseVisualStyleBackColor = false;
-            this.browseFolderBtn.Click += new System.EventHandler(this.browseFolderBtn_Click);
-            // 
-            // folderLabel
-            // 
-            this.folderLabel.AutoSize = true;
-            this.folderLabel.Location = new System.Drawing.Point(24, 26);
-            this.folderLabel.Name = "folderLabel";
-            this.folderLabel.Size = new System.Drawing.Size(43, 15);
-            this.folderLabel.TabIndex = 3;
-            this.folderLabel.Text = "Folder:";
-            // 
-            // fileNameTextBox
-            // 
-            this.fileNameTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.fileNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fileNameTextBox.Location = new System.Drawing.Point(73, 52);
-            this.fileNameTextBox.Name = "fileNameTextBox";
-            this.fileNameTextBox.Size = new System.Drawing.Size(230, 23);
-            this.fileNameTextBox.TabIndex = 5;
-            this.fileNameTextBox.Text = "NewVideo1";
-            // 
-            // fileLabel
-            // 
-            this.fileLabel.AutoSize = true;
-            this.fileLabel.Location = new System.Drawing.Point(6, 55);
-            this.fileLabel.Name = "fileLabel";
-            this.fileLabel.Size = new System.Drawing.Size(61, 15);
-            this.fileLabel.TabIndex = 5;
-            this.fileLabel.Text = "File name:";
             // 
             // qualityLabel
             // 
@@ -401,32 +339,6 @@
             this.separateAudioCheckBox.Text = "Write audio to a separate file (.wav)";
             this.separateAudioCheckBox.UseVisualStyleBackColor = true;
             // 
-            // generalGroup
-            // 
-            this.generalGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.generalGroup.Controls.Add(this.aviLabel);
-            this.generalGroup.Controls.Add(this.folderTextBox);
-            this.generalGroup.Controls.Add(this.browseFolderBtn);
-            this.generalGroup.Controls.Add(this.folderLabel);
-            this.generalGroup.Controls.Add(this.fileNameTextBox);
-            this.generalGroup.Controls.Add(this.fileLabel);
-            this.generalGroup.Location = new System.Drawing.Point(9, 58);
-            this.generalGroup.Margin = new System.Windows.Forms.Padding(0, 9, 0, 0);
-            this.generalGroup.Name = "generalGroup";
-            this.generalGroup.Size = new System.Drawing.Size(340, 90);
-            this.generalGroup.TabIndex = 2;
-            this.generalGroup.TabStop = false;
-            this.generalGroup.Text = "General options";
-            // 
-            // aviLabel
-            // 
-            this.aviLabel.AutoSize = true;
-            this.aviLabel.Location = new System.Drawing.Point(309, 55);
-            this.aviLabel.Name = "aviLabel";
-            this.aviLabel.Size = new System.Drawing.Size(25, 15);
-            this.aviLabel.TabIndex = 26;
-            this.aviLabel.Text = ".avi";
-            // 
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.SystemColors.Control;
@@ -439,7 +351,7 @@
             this.toolStripSeparator1,
             this.settingsBtn,
             this.aboutBtn});
-            this.toolStrip1.Location = new System.Drawing.Point(232, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(92, 117);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(9);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -508,6 +420,33 @@
             this.aboutBtn.Text = "About | F1";
             this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
             // 
+            // recButton
+            // 
+            this.recButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.recButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.recButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.recButton.Image = ((System.Drawing.Image)(resources.GetObject("recButton.Image")));
+            this.recButton.Location = new System.Drawing.Point(115, 79);
+            this.recButton.Margin = new System.Windows.Forms.Padding(0);
+            this.recButton.Name = "recButton";
+            this.recButton.Size = new System.Drawing.Size(133, 38);
+            this.recButton.TabIndex = 0;
+            this.recButton.Text = "GRABAR (Alt+C)";
+            this.recButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.recButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.recButton.UseVisualStyleBackColor = false;
+            this.recButton.Click += new System.EventHandler(this.recButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(115, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(131, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // previewBox
             // 
             this.previewBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -523,33 +462,6 @@
             this.previewBox.TabIndex = 26;
             this.previewBox.TabStop = false;
             // 
-            // recButton
-            // 
-            this.recButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.recButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.recButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.recButton.Image = ((System.Drawing.Image)(resources.GetObject("recButton.Image")));
-            this.recButton.Location = new System.Drawing.Point(102, 9);
-            this.recButton.Margin = new System.Windows.Forms.Padding(0);
-            this.recButton.Name = "recButton";
-            this.recButton.Size = new System.Drawing.Size(120, 40);
-            this.recButton.TabIndex = 0;
-            this.recButton.Text = " REC (Alt+R)";
-            this.recButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.recButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.recButton.UseVisualStyleBackColor = false;
-            this.recButton.Click += new System.EventHandler(this.recButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -558,7 +470,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.previewBox);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.generalGroup);
             this.Controls.Add(this.audioGroup);
             this.Controls.Add(this.videoGroup);
             this.Controls.Add(this.recButton);
@@ -582,12 +493,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.heightNumeric)).EndInit();
             this.audioGroup.ResumeLayout(false);
             this.audioGroup.PerformLayout();
-            this.generalGroup.ResumeLayout(false);
-            this.generalGroup.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -596,11 +505,6 @@
 		#endregion
 
 		private System.Windows.Forms.Button recButton;
-		private System.Windows.Forms.TextBox folderTextBox;
-		private QuickLibrary.QlibTextButton browseFolderBtn;
-		private System.Windows.Forms.Label folderLabel;
-		private System.Windows.Forms.TextBox fileNameTextBox;
-		private System.Windows.Forms.Label fileLabel;
 		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
 		private System.Windows.Forms.Label qualityLabel;
 		private System.Windows.Forms.Label areaLabel;
@@ -608,8 +512,6 @@
 		private QuickLibrary.QlibCheckBox captureCursorCheckBox;
 		private System.Windows.Forms.Label inputDeviceLabel;
 		private QuickLibrary.QlibGroupBox audioGroup;
-		private QuickLibrary.QlibGroupBox generalGroup;
-		private System.Windows.Forms.Label aviLabel;
 		private System.Windows.Forms.Timer updateTimer;
 		private QuickLibrary.QlibComboBox areaComboBox;
 		private QuickLibrary.QlibComboBox qualityComboBox;
@@ -628,10 +530,10 @@
 		private System.Windows.Forms.Label sizelabel;
 		private QuickLibrary.QlibCheckBox hideTaskbarCheckBox;
 		private System.Windows.Forms.Button refreshScreensBtn;
-		private System.Windows.Forms.PictureBox previewBox;
-		private System.Windows.Forms.ToolStripButton previewBtn;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripButton previewBtn;
+        private System.Windows.Forms.PictureBox previewBox;
     }
 }
 

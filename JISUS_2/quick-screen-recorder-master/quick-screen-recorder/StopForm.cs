@@ -96,7 +96,7 @@ namespace quick_screen_recorder
 
 				if (modifier == HotkeyManager.KeyModifier.Alt)
 				{
-					if (key == Keys.R)
+					if (key == Keys.C)
 					{
 						this.Close();
 					}
@@ -110,7 +110,7 @@ namespace quick_screen_recorder
 
 		private void StopForm_Load(object sender, EventArgs e)
 		{
-			HotkeyManager.RegisterHotKey(this.Handle, 0, (int)HotkeyManager.KeyModifier.Alt, Keys.R.GetHashCode());
+			HotkeyManager.RegisterHotKey(this.Handle, 0, (int)HotkeyManager.KeyModifier.Alt, Keys.C.GetHashCode());
 			HotkeyManager.RegisterHotKey(this.Handle, 1, (int)HotkeyManager.KeyModifier.Alt, Keys.M.GetHashCode());
 			try
 			{
@@ -141,8 +141,8 @@ namespace quick_screen_recorder
 					if (nexussube == "lexusV." || nexussube == "ynexosV." || nexussube == "lexussobre" || nexussube == "nexossuvez" || nexussube == "nexosV." || nexussube == "lessuben" || nexussube == "lexussuben" || nexussube == "nexossobre" || nexussube == "nexosuren" || nexussube == "lexussube" || nexussube == "nexussube" || nexussube == "mesessobre" || nexussube == "nexosobre" || nexussube == "nexossuben" || nexussube == "nexossube" || nexussube == "lexussuvez" || nexussube == "naxossobre" || nexussube == "dexeussube" || nexussube == "lexussupe" || nexussube == "nexoshube" || nexussube == "lexusasuvez" || nexussube == "elluxussobre" || nexussube == "lluxussobre" || nexussube == "elluxussuvez" || nexussube == "ellexussobre")
 					{
 						
-						System.Media.SoundPlayer player = new System.Media.SoundPlayer("resources/upload_success.wav");
-						player.Play();
+						//System.Media.SoundPlayer player = new System.Media.SoundPlayer(Directory.GetCurrentDirectory() + "/upload_success.wav");
+						//player.Play();
 						timer1.Start();
 						segons = false;
 						NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...", Color.FromArgb(63, 34, 82));
