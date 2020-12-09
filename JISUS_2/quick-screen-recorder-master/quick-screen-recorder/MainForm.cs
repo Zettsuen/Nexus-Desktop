@@ -45,10 +45,11 @@ public partial class MainForm : Form
 			areaForm = new AreaForm();
 			areaForm.Owner = this;
 
-			inputDeviceComboBox.SelectedIndex = 0;
+			inputDeviceComboBox.SelectedIndex = 1;
 
 			RefreshScreens();
 			RefreshAudioDevices();
+			
 
 			previewBtn.Checked = Properties.Settings.Default.Preview;
 			enabledPreview(previewBtn.Checked);
@@ -350,7 +351,7 @@ public partial class MainForm : Form
 		private void CheckStartRec()
 		{
 			string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/" + RandomPassword() + ".avi");
-
+			Run(path);
 			if (File.Exists(path))
 			{
 				DialogResult window = MessageBox.Show(

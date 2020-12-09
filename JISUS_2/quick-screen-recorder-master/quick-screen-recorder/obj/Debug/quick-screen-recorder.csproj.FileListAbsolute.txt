@@ -89,3 +89,7 @@ C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-mast
 C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.application
 C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.exe.manifest
 C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.application
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.exe.manifest
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Debug\Nexus Live.application
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.exe.manifest
+C:\Users\Panta\OneDrive\Documentos\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Debug\Nexus Live.application

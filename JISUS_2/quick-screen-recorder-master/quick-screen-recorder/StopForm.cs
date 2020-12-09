@@ -124,7 +124,7 @@ namespace quick_screen_recorder
 					if (nexussube == "lexusV." || nexussube == "ynexosV." || nexussube == "lexussobre" || nexussube == "nexossuvez" || nexussube == "nexosV." || nexussube == "lessuben" || nexussube == "lexussuben" || nexussube == "nexossobre" || nexussube == "nexosuren" || nexussube == "lexussube" || nexussube == "nexussube" || nexussube == "mesessobre" || nexussube == "nexosobre" || nexussube == "nexossuben" || nexussube == "nexossube" || nexussube == "lexussuvez" || nexussube == "naxossobre" || nexussube == "dexeussube" || nexussube == "lexussupe" || nexussube == "nexoshube" || nexussube == "lexusasuvez" || nexussube == "elluxussobre" || nexussube == "lluxussobre" || nexussube == "elluxussuvez" || nexussube == "ellexussobre")
 					{
 						
-						System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\jordi\source\repos\lecturadeveu\lecturadeveu\upload_success.wav");
+						System.Media.SoundPlayer player = new System.Media.SoundPlayer("resources/upload_success.wav");
 						player.Play();
 						timer1.Start();
 						segons = false;
