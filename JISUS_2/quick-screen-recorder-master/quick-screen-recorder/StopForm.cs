@@ -69,13 +69,9 @@ namespace quick_screen_recorder
 			var b = myFile.FullName;
 			var a = myFile.Name;
 			var c = b.Substring(0, b.Length - a.Length);
-			System.Diagnostics.Process process = new System.Diagnostics.Process();
-			System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-			startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-			startInfo.FileName = "cmd.exe";
-			startInfo.Arguments = $"ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}";
-			process.StartInfo = startInfo;
-			process.Start();
+			string strCmdText;
+			strCmdText = $"ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}";
+			System.Diagnostics.Process.Start("CMD.exe", strCmdText);
 
 
 		}

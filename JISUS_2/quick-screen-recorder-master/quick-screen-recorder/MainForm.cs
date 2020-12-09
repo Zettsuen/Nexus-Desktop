@@ -206,6 +206,17 @@ public partial class MainForm : Form
 				recorder.Dispose();
 				recorder.OnPeakVolumeChanged -= Recorder_OnPeakVolumeChanged;
 				recorder = null;
+				string args = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/");
+				DirectoryInfo f1 = new DirectoryInfo(args);
+				var myFile = f1.GetFiles()
+				 .OrderByDescending(f => f.LastWriteTime)
+				 .First();
+				var b = myFile.FullName;
+				var a = myFile.Name;
+				var c = b.Substring(0, b.Length - a.Length);
+				string strCmdText;
+				strCmdText = $"ffmpeg.exe -sseof -30 -i {b} -vcodec libx264 -crf 28 {c}jugada-nexus-{a}";
+				System.Diagnostics.Process.Start("CMD.exe", strCmdText);
 			}
 			catch
 			{
