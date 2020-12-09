@@ -45,7 +45,7 @@ public partial class MainForm : Form
 			areaForm = new AreaForm();
 			areaForm.Owner = this;
 
-			inputDeviceComboBox.SelectedIndex = 1;
+			inputDeviceComboBox.SelectedIndex = 0;
 
 			RefreshScreens();
 			RefreshAudioDevices();
