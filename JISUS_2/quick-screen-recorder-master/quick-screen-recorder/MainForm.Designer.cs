@@ -76,9 +76,9 @@
             this.qualityLabel.AutoSize = true;
             this.qualityLabel.Location = new System.Drawing.Point(19, 25);
             this.qualityLabel.Name = "qualityLabel";
-            this.qualityLabel.Size = new System.Drawing.Size(50, 15);
+            this.qualityLabel.Size = new System.Drawing.Size(48, 15);
             this.qualityLabel.TabIndex = 10;
-            this.qualityLabel.Text = "Calidad:";
+            this.qualityLabel.Text = "Quality:";
             // 
             // areaLabel
             // 
@@ -87,7 +87,7 @@
             this.areaLabel.Name = "areaLabel";
             this.areaLabel.Size = new System.Drawing.Size(34, 15);
             this.areaLabel.TabIndex = 18;
-            this.areaLabel.Text = "Área:";
+            this.areaLabel.Text = "Area:";
             // 
             // videoGroup
             // 
@@ -111,7 +111,7 @@
             this.videoGroup.Size = new System.Drawing.Size(340, 140);
             this.videoGroup.TabIndex = 6;
             this.videoGroup.TabStop = false;
-            this.videoGroup.Text = "Opciones de vídeo";
+            this.videoGroup.Text = "Video options";
             // 
             // refreshScreensBtn
             // 
@@ -297,7 +297,7 @@
             this.audioGroup.Size = new System.Drawing.Size(340, 80);
             this.audioGroup.TabIndex = 16;
             this.audioGroup.TabStop = false;
-            this.audioGroup.Text = "Opciones de audio";
+            this.audioGroup.Text = "Audio options";
             // 
             // refreshAudioBtn
             // 
@@ -351,7 +351,7 @@
             this.toolStripSeparator1,
             this.settingsBtn,
             this.aboutBtn});
-            this.toolStrip1.Location = new System.Drawing.Point(115, 117);
+            this.toolStrip1.Location = new System.Drawing.Point(92, 117);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(9);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
