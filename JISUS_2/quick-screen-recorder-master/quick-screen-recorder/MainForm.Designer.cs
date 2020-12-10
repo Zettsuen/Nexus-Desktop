@@ -108,7 +108,7 @@
             this.videoGroup.Location = new System.Drawing.Point(9, 157);
             this.videoGroup.Margin = new System.Windows.Forms.Padding(0, 9, 0, 0);
             this.videoGroup.Name = "videoGroup";
-            this.videoGroup.Size = new System.Drawing.Size(340, 140);
+            this.videoGroup.Size = new System.Drawing.Size(10, 10);
             this.videoGroup.TabIndex = 6;
             this.videoGroup.TabStop = false;
             this.videoGroup.Text = "Video options";
