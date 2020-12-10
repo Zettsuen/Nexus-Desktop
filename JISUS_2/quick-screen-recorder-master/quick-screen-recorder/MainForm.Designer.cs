@@ -351,7 +351,7 @@
             this.toolStripSeparator1,
             this.settingsBtn,
             this.aboutBtn});
-            this.toolStrip1.Location = new System.Drawing.Point(92, 117);
+            this.toolStrip1.Location = new System.Drawing.Point(115, 117);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(9);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
