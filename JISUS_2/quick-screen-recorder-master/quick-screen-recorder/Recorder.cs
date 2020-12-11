@@ -102,7 +102,7 @@ namespace quick_screen_recorder
                 {
                     DeviceNumber = inputSourceIndex,
                     WaveFormat = waveFormat,
-                    BufferMilliseconds = (int)Math.Ceiling(2000 / writer.FramesPerSecond),
+                    BufferMilliseconds = (int)Math.Ceiling(1000 / writer.FramesPerSecond),
                     NumberOfBuffers = 3,
                 };
                 audioSource.DataAvailable += audioSource_DataAvailable;
