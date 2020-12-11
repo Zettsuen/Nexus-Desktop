@@ -58,6 +58,7 @@ namespace quick_screen_recorder
 
 		private void recButton_Click(object sender, EventArgs e)
 		{
+			MainForm.repe = true;
 			this.Close();
 		}
 		private static void Run(string args)
@@ -140,13 +141,15 @@ namespace quick_screen_recorder
 				{
 					if (nexussube == "lexusV." || nexussube == "ynexosV." || nexussube == "lexussobre" || nexussube == "nexossuvez" || nexussube == "nexosV." || nexussube == "lessuben" || nexussube == "lexussuben" || nexussube == "nexossobre" || nexussube == "nexosuren" || nexussube == "lexussube" || nexussube == "nexussube" || nexussube == "mesessobre" || nexussube == "nexosobre" || nexussube == "nexossuben" || nexussube == "nexossube" || nexussube == "lexussuvez" || nexussube == "naxossobre" || nexussube == "dexeussube" || nexussube == "lexussupe" || nexussube == "nexoshube" || nexussube == "lexusasuvez" || nexussube == "elluxussobre" || nexussube == "lluxussobre" || nexussube == "elluxussuvez" || nexussube == "ellexussobre")
 					{
-						
+
 						//System.Media.SoundPlayer player = new System.Media.SoundPlayer(Directory.GetCurrentDirectory() + "/upload_success.wav");
 						//player.Play();
+						MainForm.repe = true;
 						timer1.Start();
 						segons = false;
 						NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...", Color.FromArgb(63, 34, 82));
 						notificacio.Show();
+						
 						this.Close();
 					}
 					else

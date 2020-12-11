@@ -22,8 +22,9 @@ namespace quick_screen_recorder
 {
 
 
-public partial class MainForm : Form
+	public partial class MainForm : Form
 	{
+		public static Boolean repe = false;
 		private AreaForm areaForm;
 		private StopForm stopForm;
 
@@ -49,7 +50,7 @@ public partial class MainForm : Form
 
 			RefreshScreens();
 			RefreshAudioDevices();
-			
+
 
 			previewBtn.Checked = Properties.Settings.Default.Preview;
 			enabledPreview(previewBtn.Checked);
@@ -187,10 +188,14 @@ public partial class MainForm : Form
 			yNumeric.Maximum = maxY;
 		}
 
+
+
 		private void recButton_Click(object sender, EventArgs e)
 		{
 			CheckStartRec();
+
 		}
+
 
 		public void StopRec()
 		{
@@ -229,6 +234,14 @@ public partial class MainForm : Form
 			{
 				MessageBox.Show("Something went wrong!", "Error");
 			}
+			do
+			{
+				if (repe == true)
+				{
+					CheckStartRec();
+				}
+			}
+			while (repe == false);
 		}
 		// Instantiate random number generator.  
 		private readonly Random _random = new Random();
@@ -484,7 +497,8 @@ public partial class MainForm : Form
 		}
 
 		private void MainForm_Load(object sender, EventArgs e)
-		{
+		{ 
+			
 			String crear = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Nexus/");
 			if (Directory.Exists(crear))
 			{
