@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nexus Live.exe" size="1051616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nexus Live.exe" size="1021408">
       <assemblyIdentity name="Nexus Live" version="1.2.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OERKDYhoMMX8zOCHVXrJOMvcZ81oIKikQePulKU1rOc=</dsig:DigestValue>
+        <dsig:DigestValue>16Gee2nrI7cXEpxAMlXwi4aMkVhCX6f4sJIOGo7kl4o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

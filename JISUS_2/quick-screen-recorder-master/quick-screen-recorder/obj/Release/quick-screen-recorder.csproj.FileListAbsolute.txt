@@ -41,3 +41,29 @@ C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Re
 C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick-screen-recorder.csproj.CopyComplete
 C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Release\Nexus Live.exe
 C:\Users\jordi\Desktop\quick-screen-recorder-master\quick-screen-recorder\obj\Release\Nexus Live.pdb
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\Nexus Live.exe.config
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\Nexus Live.exe.manifest
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\Nexus Live.application
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\Nexus Live.exe
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\Nexus Live.pdb
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\NAudio.dll
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\Octokit.dll
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\SharpAvi.dll
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\NAudio.xml
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\QuickLibrary.pdb
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\bin\Release\SharpAvi.xml
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick-screen-recorder.csprojAssemblyReference.cache
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick_screen_recorder.AboutForm.resources
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick_screen_recorder.AreaForm.resources
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick_screen_recorder.MainForm.resources
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick_screen_recorder.NotiForm.resources
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick_screen_recorder.Properties.Resources.resources
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick_screen_recorder.SettingsForm.resources
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick_screen_recorder.StopForm.resources
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick-screen-recorder.csproj.GenerateResource.cache
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick-screen-recorder.csproj.CoreCompileInputs.cache
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\Nexus Live.exe.manifest
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\Nexus Live.application
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\quick-screen-recorder.csproj.CopyComplete
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\Nexus Live.exe
+C:\Users\jordi\Documents\GitHub\Nexus-Desktop\JISUS_2\quick-screen-recorder-master\quick-screen-recorder\obj\Release\Nexus Live.pdb
