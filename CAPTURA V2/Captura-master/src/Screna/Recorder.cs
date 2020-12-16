@@ -382,9 +382,7 @@ namespace Captura.Video
                         
                         //NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...", Color.FromArgb(63, 34, 82));
                         //notificacio.Show();
-                        this.Stop();
-                    
-                       
+                        Stop();
                     }
                     else
                     {
