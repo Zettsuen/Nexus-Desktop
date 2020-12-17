@@ -13,6 +13,8 @@ using Captura.Video;
 using Captura.Webcam;
 using Microsoft.Win32;
 using System.Speech.Recognition;
+using System.Drawing;
+using lecturadeveu;
 
 namespace Captura.ViewModels
 {
@@ -445,8 +447,8 @@ namespace Captura.ViewModels
                 if (nexussube == "lexusV." || nexussube == "ynexosV." || nexussube == "lexussobre" || nexussube == "nexossuvez" || nexussube == "nexosV." || nexussube == "lessuben" || nexussube == "lexussuben" || nexussube == "nexossobre" || nexussube == "nexosuren" || nexussube == "lexussube" || nexussube == "nexussube" || nexussube == "mesessobre" || nexussube == "nexosobre" || nexussube == "nexossuben" || nexussube == "nexossube" || nexussube == "lexussuvez" || nexussube == "naxossobre" || nexussube == "dexeussube" || nexussube == "lexussupe" || nexussube == "nexoshube" || nexussube == "lexusasuvez" || nexussube == "elluxussobre" || nexussube == "lluxussobre" || nexussube == "elluxussuvez" || nexussube == "ellexussobre")
                 {
 
-                    //NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...", Color.FromArgb(63, 34, 82));
-                    //notificacio.Show();
+                    NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...", Color.FromArgb(63, 34, 82));
+                    notificacio.Show();
                     StopRecording();
                     
                 }
