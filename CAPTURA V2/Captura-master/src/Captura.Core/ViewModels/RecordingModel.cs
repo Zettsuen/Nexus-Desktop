@@ -411,20 +411,24 @@ namespace Captura.ViewModels
 
         ///ROACODE
         private SpeechRecognitionEngine escolta = new SpeechRecognitionEngine();
-
+        static Boolean EscoltaRecognizer = false;
         ///ENDROACODE
 
 
         void InternalStartRecording()
         {
             _recorder.Start();
-            ///ROACODE
-            escolta.SetInputToDefaultAudioDevice();
-            escolta.LoadGrammar(new DictationGrammar());
-            escolta.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Lector);
-            escolta.RecognizeAsync(RecognizeMode.Multiple);
-            ///ENDROACODE
-            
+
+            if (EscoltaRecognizer == false)
+            {
+                EscoltaRecognizer = true;
+                ///ROACODE
+                escolta.SetInputToDefaultAudioDevice();
+                escolta.LoadGrammar(new DictationGrammar());
+                escolta.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Lector);
+                escolta.RecognizeAsync(RecognizeMode.Multiple);
+                ///ENDROACODE
+            }
         }
 
         ///ROACODE
@@ -444,6 +448,7 @@ namespace Captura.ViewModels
                     //NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...", Color.FromArgb(63, 34, 82));
                     //notificacio.Show();
                     StopRecording();
+                    
                 }
                 else
                 {
@@ -599,6 +604,7 @@ namespace Captura.ViewModels
             AfterRecording();
 
             await task;
+
         }
     }
 }
