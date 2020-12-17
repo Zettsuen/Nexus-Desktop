@@ -19,4 +19,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="ReactiveProperty" Version="6.1.3" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Speech" />
+  </ItemGroup>
 </Project>

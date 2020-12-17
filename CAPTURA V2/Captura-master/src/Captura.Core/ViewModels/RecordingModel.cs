@@ -12,6 +12,7 @@ using Captura.MouseKeyHook.Steps;
 using Captura.Video;
 using Captura.Webcam;
 using Microsoft.Win32;
+using System.Speech.Recognition;
 
 namespace Captura.ViewModels
 {
@@ -408,10 +409,54 @@ namespace Captura.ViewModels
             }
         }
 
+        ///ROACODE
+        private SpeechRecognitionEngine escolta = new SpeechRecognitionEngine();
+
+        ///ENDROACODE
+
+
         void InternalStartRecording()
         {
             _recorder.Start();
+            ///ROACODE
+            escolta.SetInputToDefaultAudioDevice();
+            escolta.LoadGrammar(new DictationGrammar());
+            escolta.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Lector);
+            escolta.RecognizeAsync(RecognizeMode.Multiple);
+            ///ENDROACODE
+            
         }
+
+        ///ROACODE
+        public void Lector(object sender, SpeechRecognizedEventArgs e)
+        {
+            String nexussube = "";
+
+
+            foreach (RecognizedWordUnit paraula in e.Result.Words)
+            {
+                nexussube += paraula.Text;
+
+
+                if (nexussube == "lexusV." || nexussube == "ynexosV." || nexussube == "lexussobre" || nexussube == "nexossuvez" || nexussube == "nexosV." || nexussube == "lessuben" || nexussube == "lexussuben" || nexussube == "nexossobre" || nexussube == "nexosuren" || nexussube == "lexussube" || nexussube == "nexussube" || nexussube == "mesessobre" || nexussube == "nexosobre" || nexussube == "nexossuben" || nexussube == "nexossube" || nexussube == "lexussuvez" || nexussube == "naxossobre" || nexussube == "dexeussube" || nexussube == "lexussupe" || nexussube == "nexoshube" || nexussube == "lexusasuvez" || nexussube == "elluxussobre" || nexussube == "lluxussobre" || nexussube == "elluxussuvez" || nexussube == "ellexussobre")
+                {
+
+                    //NotiForm notificacio = new NotiForm("¡LISTO! Tu clip se está procesando...", Color.FromArgb(63, 34, 82));
+                    //notificacio.Show();
+                    StopRecording();
+                }
+                else
+                {
+                    //COMANDO INCORRECTO
+                }
+
+
+
+            }
+
+
+        }
+        ///ENDROACODE
 
         void OnErrorOccured(Exception E)
         {
