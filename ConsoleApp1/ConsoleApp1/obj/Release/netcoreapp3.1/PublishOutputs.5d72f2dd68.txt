@@ -1,5 +1,0 @@
-C:\Users\Panta\OneDrive\Escritorio\Nexus-console\ConsoleApp1.exe
-C:\Users\Panta\OneDrive\Escritorio\Nexus-console\ConsoleApp1.dll
-C:\Users\Panta\OneDrive\Escritorio\Nexus-console\ConsoleApp1.deps.json
-C:\Users\Panta\OneDrive\Escritorio\Nexus-console\ConsoleApp1.runtimeconfig.json
-C:\Users\Panta\OneDrive\Escritorio\Nexus-console\ConsoleApp1.pdb
